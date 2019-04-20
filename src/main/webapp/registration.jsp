@@ -11,7 +11,10 @@
     <title>Registration</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/rfdb" method="post"> // helps to avoid an absolute path inside the jsp
+<%--<form action="${pageContext.request.contextPath}/registration" method="post"> // helps to avoid an absolute path inside the jsp--%>
+<form action="adduser" method="post">
+    <%--Why it doesn't work with / and with contextPath?--%>
+
     <input type="text" name="name" placeholder="Name">
     <input type="text" name="surname" placeholder="Surname">
     <input type="email" name="email" placeholder="Email">
